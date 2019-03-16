@@ -7,13 +7,13 @@ Gem::Specification.new do |spec|
   spec.name          = "pdf_kitchen"
   spec.version       = PdfKitchen::VERSION
   spec.license       = "MIT"
-  spec.version       = "0.2.1"
+  spec.version       = "0.2.2"
   spec.authors       = ["tanaka"]
   spec.email         = ["tanaka@lilli.co.jp"]
 
   spec.summary       = %q{Ruby client library for the PdfKitchen Platform.}
   spec.description   = %q{PdfKitchen API client: Ruby client library for the PdfKitchen Platform.}
-  spec.homepage      = "https://github.com/tanaka3622/pfg_kitchen.git"
+  spec.homepage      = "https://github.com/tanaka3622/pdf_kitchen.git"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
