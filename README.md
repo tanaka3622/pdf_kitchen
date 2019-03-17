@@ -26,6 +26,7 @@ PdfKitchen::Api.get({
    data: {
       text1: "aaa"
       ... 
-   }
+   },
+   send_file: true # :disposition => 'inline'でフロントに吐き出すかどうかのフラグ
 })
 ```

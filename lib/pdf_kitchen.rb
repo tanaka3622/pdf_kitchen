@@ -7,7 +7,7 @@ module PdfKitchen
   class Error < StandardError; end
   # Your code goes here...
   class Api
-    def self.post(filename: "sample.pdf", access_token:, access_secret_token:, data: {})
+    def self.post(filename: "sample.pdf", access_token:, access_secret_token:, data: {}, send_file: false)
         uri = URI.parse('https://dev.pdf.kitchen/app/kitchen/cooking')
         https = Net::HTTP.new(uri.host, uri.port)
         https.use_ssl = true
@@ -19,7 +19,10 @@ module PdfKitchen
         res = https.request(req)
 
         File.open(filename, "w") do |f|
-          f.puts(res.body)
+          f.puts(res.body.force_encoding("UTF-8"))
+        end
+        if send_file
+          send_file(filename, :filename => "your_document.pdf", :disposition => 'inline', :type => "application/pdf")
         end
     end
   end
