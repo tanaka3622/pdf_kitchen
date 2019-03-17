@@ -27,6 +27,11 @@ PdfKitchen::Api.post({
       text1: "aaa"
       ... 
    },
-   send_file_flg: true # :disposition => 'inline'でフロントに吐き出すかどうかのフラグ
 })
+```
+
+```
+＊補足
+フロント側にダウンロードさせたい場合のコード例
+send_file(filename, :filename => "your_document.pdf", :disposition => 'inline', :type => "application/pdf")
 ```
