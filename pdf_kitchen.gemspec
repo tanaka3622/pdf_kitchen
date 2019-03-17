@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "pdf_kitchen"
   spec.version       = PdfKitchen::VERSION
   spec.license       = "MIT"
-  spec.version       = "0.3.1"
+  spec.version       = "0.3.2"
   spec.authors       = ["tanaka"]
   spec.email         = ["tanaka@lilli.co.jp"]
 
