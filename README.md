@@ -33,5 +33,8 @@ PdfKitchen::Api.post({
 ```
 ＊補足
 フロント側にダウンロードさせたい場合のコード例
+send_file(filename, :filename => "your_document.pdf", :type => "application/pdf")
+
+ブラウザ側に表示させたい場合は
 send_file(filename, :filename => "your_document.pdf", :disposition => 'inline', :type => "application/pdf")
 ```
