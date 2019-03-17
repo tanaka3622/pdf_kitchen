@@ -19,7 +19,7 @@ Or install it yourself as:
 ## Usage
 
 ```
-PdfKitchen::Api.get({
+PdfKitchen::Api.post({
    filename: "/var/www/html/aaa.pdf",
    access_token: "システムで発行するtoken",
    access_secret_token: "システムで発行するsecret-token",
